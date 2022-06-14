@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "27f346fc-badb-4d3a-9591-5724b4eed218",
+		"name": "Shopify Technical Challenge Submission link",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/v1/inventory/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Plant21\",\r\n    \"quantity\": 170,\r\n    \"price\": 100,\r\n    \"description\": \"Lotus\",\r\n    \"image\": \"https://test_loutus.com\",\r\n    \"batch_code\": \"898979\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/inventory/",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"inventory",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "Create a new item"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/inventory/62a7f57f0843a3bc92bd066d",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Plant Changed again forever new one\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/inventory/62a7f57f0843a3bc92bd066d",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"inventory",
+						"62a7f57f0843a3bc92bd066d"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "Update item in the inventory"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/inventory/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/inventory/",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"inventory",
+						""
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "Get all items from the inventory"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/inventory/62a7b9cfb179539da443d914",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/inventory/62a7b9cfb179539da443d914",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"inventory",
+						"62a7b9cfb179539da443d914"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				},
+				"description": "Delete a single item"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/inventory/62a7f7a80843a3bc92bd066f",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/inventory/62a7f7a80843a3bc92bd066f",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"inventory",
+						"62a7f7a80843a3bc92bd066f"
+					]
+				},
+				"description": "Get a single item"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/shipment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"cust_name\":\"John Snow\",\"address\":\"White Walker Mansion\",\"phone\":\"9009009000\",\"items\":[{\r\n            \"_id\": \"62a7f7a80843a3bc92bd066f\",\r\n            \"name\": \"plant30\",\r\n            \"quantity\": 10,\r\n            \"price\": 10,\r\n            \"description\": \"Rose\",\r\n            \"batch_code\": \"898979\",\r\n            \"createdAt\": \"2022-06-14T02:51:20.077Z\",\r\n            \"updatedAt\": \"2022-06-14T02:51:20.077Z\",\r\n            \"__v\": 0\r\n        },\r\n        {\r\n            \"_id\": \"62a7f57f0843a3bc92bd066d\",\r\n            \"name\": \"plant changed again forever new one\",\r\n            \"quantity\": 5,\r\n            \"price\": 100,\r\n            \"description\": \"Lotus\",\r\n            \"batch_code\": \"898979\",\r\n            \"createdAt\": \"2022-06-14T02:42:07.748Z\",\r\n            \"updatedAt\": \"2022-06-14T02:52:06.540Z\",\r\n            \"__v\": 0\r\n        }\r\n        ],\"total_price\":\"1700\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/shipment",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"shipment"
+					]
+				},
+				"description": "Used to add shipment and it also checks the value of the Inventory System that a shipment can be created or not on the current quantity level"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/shipment/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/shipment/",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"shipment",
+						""
+					]
+				},
+				"description": "Get all the shipments created"
+			},
+			"response": []
+		},
+		{
+			"name": "/api/v1/shipment/62a7fe1c8c6ee9804170bbc2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "Shopify-Technical-Challenge-Submission-link.akshipt.repl.co/api/v1/shipment/62a7fe1c8c6ee9804170bbc2",
+					"host": [
+						"Shopify-Technical-Challenge-Submission-link",
+						"akshipt",
+						"repl",
+						"co"
+					],
+					"path": [
+						"api",
+						"v1",
+						"shipment",
+						"62a7fe1c8c6ee9804170bbc2"
+					]
+				},
+				"description": "Delete single Shipment"
+			},
+			"response": []
+		}
+	]
+}
